@@ -1,1 +1,1 @@
-console.log("priyanshu");
+console.log("prime");
