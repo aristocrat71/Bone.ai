@@ -1,8 +1,18 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import './App.css'
+import ImageUploader from './components/ImageUploader';
 
-
-export default function App()
-{
+function App() {
   return (
-    <p>Hello!</p>
-  )
-};
+    <div>
+      <Navbar />
+      <div className="container" style={{ padding: '20px' }}>
+        <h2>Upload your X-ray</h2>
+        <ImageUploader />
+      </div>
+    </div>
+  );
+}
+
+export default App;
