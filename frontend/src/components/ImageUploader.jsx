@@ -19,7 +19,7 @@ const ImageUploader = () => {
 
     const formData = new FormData();
     formData.append('image', image);
-    formData.append('userName', userName); // auto-injected
+    formData.append('userName', userName); 
 
     try {
       setStatus("Uploading...");
