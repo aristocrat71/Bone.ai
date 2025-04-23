@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { getLoggedInUsername } from '../utils/auth'; // adjust path as needed
+import { getLoggedInUsername } from '../utils/auth'; 
 
 const ImageUploader = () => {
   const [image, setImage] = useState(null);
   const [status, setStatus] = useState('');
-  const userName = getLoggedInUsername(); // auth-ready
+  const userName = getLoggedInUsername(); 
 
   const handleImageChange = (e) => {
     setImage(e.target.files[0]);
