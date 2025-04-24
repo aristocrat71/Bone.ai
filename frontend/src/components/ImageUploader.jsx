@@ -5,9 +5,19 @@ const ImageUploader = () => {
   const [image, setImage] = useState(null);
   const [status, setStatus] = useState('');
   const [processedImageUrl, setProcessedImageUrl] = useState(null); 
+  const [previewUrl, setPreviewUrl] = useState(null);
   const userName = getLoggedInUsername();
 
-  const handleImageChange = (e) => setImage(e.target.files[0]);
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+    if (file) {
+      setPreviewUrl(URL.createObjectURL(file));
+    } else {
+      setPreviewUrl(null);
+    }
+  };
+  
 
   const handleUpload = async () => {
     if (!image) {
@@ -41,7 +51,25 @@ const ImageUploader = () => {
 
   return (
     <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md space-y-4">
-      <input type="file" accept="image/*" onChange={handleImageChange} className="block w-full text-sm text-gray-500" />
+      <input id="fileInput" type="file" accept="image/*" onChange={handleImageChange} className="hidden"
+/>
+      <label htmlFor="fileInput"
+        className="block w-full text-center cursor-pointer px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 border border-dashed border-gray-400">
+        {image ? image.name : 'Browse'}
+      </label>
+
+      {previewUrl && (
+        <div className="text-center">
+          <h3 className="text-sm text-gray-600 mb-1">Image Preview</h3>
+          <img
+            src={previewUrl}
+            alt="Preview"
+            className="rounded-md shadow-md max-w-full h-auto mx-auto"
+          />
+        </div>
+      )}
+
+
       <button onClick={handleUpload} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
         Upload
       </button>
