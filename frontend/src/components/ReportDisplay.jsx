@@ -18,7 +18,7 @@ const ReportDisplay = () => {
   }, []);
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-slate-100">
       <h1 className="text-xl font-semibold mb-4">AI-Generated Report</h1>
       {imageUrl ? (
         <img src={imageUrl} alt="Report" className="rounded-lg shadow-md max-w-full" />

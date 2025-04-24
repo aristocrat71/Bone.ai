@@ -70,7 +70,7 @@ const ImageUploader = () => {
       )}
 
 
-      <button onClick={handleUpload} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+      <button onClick={handleUpload} className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded">
         Upload
       </button>
       <p className="text-sm text-gray-700">{status}</p>
