@@ -23,7 +23,7 @@ const Navbar = () => {
             <li key={name}>
               <Link
                 to={path}
-                className={`text-lg font-medium transition duration-200 hover:text-blue-400 ${
+                className={`text-lg font-medium transition duration-200 hover:text-blue-500 ${
                   location.pathname === path ? 'text-blue-400' : 'text-gray-300'
                 }`}
               >

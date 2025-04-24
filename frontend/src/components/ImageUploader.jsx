@@ -42,7 +42,7 @@ const ImageUploader = () => {
       const imageUrl = URL.createObjectURL(blob);
       setProcessedImageUrl(imageUrl); 
       setStatus("Upload successful.");
-      // navigate('/report');
+
     } catch (error) {
       setStatus("Upload failed.");
       console.error(error);
@@ -75,7 +75,6 @@ const ImageUploader = () => {
       </button>
       <p className="text-sm text-gray-700">{status}</p>
 
-      {/* Show processed image if available */}
       {processedImageUrl && (
         <div className="mt-6 text-center">
           <h3 className="text-xl font-semibold mb-2">Model Output</h3>
