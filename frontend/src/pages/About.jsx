@@ -23,9 +23,7 @@ const teamMembers = [
 ];
 
 export default function About() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1000 });
-  // }, []);
+
 
   return (
     <div className="p-6 max-w-6xl mx-auto">
