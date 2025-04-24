@@ -34,7 +34,6 @@ export default function About() {
         </p>
       </section>
 
-      {/* Team Section */}
       <section data-aos="fade-up" className="mt-16">
         <h2 className="text-3xl font-semibold mb-8 text-center">Meet the Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
