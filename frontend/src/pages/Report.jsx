@@ -3,4 +3,5 @@ import ReportDisplay from '../components/ReportDisplay';
 
 const Report = () => <ReportDisplay />;
 
+
 export default Report;
