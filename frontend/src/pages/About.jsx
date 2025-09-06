@@ -3,22 +3,22 @@ const teamMembers = [
   {
     name: "Kartikeya Singh",
     role: "Software Developer",
-    img: "/images/1.png",
+    img: "https://via.placeholder.com/150/4f46e5/ffffff?text=KS",
   },
   {
     name: "Mitul Bhavesh Seth",
     role: "ML Engineer",
-    img: "/images/2.png",
+    img: "https://via.placeholder.com/150/06b6d4/ffffff?text=MS",
   },
   {
     name: "Malay Muskan",
     role: "Software Developer",
-    img: "/images/3.png",
+    img: "https://via.placeholder.com/150/10b981/ffffff?text=MM",
   },
   {
     name: "Sohan VR",
     role: "ML Engineer",
-    img: "/images/4.png",
+    img: "https://via.placeholder.com/150/f59e0b/ffffff?text=SV",
   },
 ];
 
